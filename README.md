@@ -1,3 +1,9 @@
+**주의**<br>
+_아직 같은 경로에 있는 `summon.sf` 밖에 인식하지 못합니다!<br>이름이 달라도 인식하지 못합니다!_<br>
+패치예정
+
+
+
 # SF 스크립트 (Summon File Script) 사용 방법
 
 ![sf script](https://github.com/newhajinyoon/sf-script/assets/61103309/dee7e8d5-16d8-49de-918c-e6d41ac6471a)
@@ -67,3 +73,8 @@ GPT에게 학습시키려면 [여기에서](https://raw.githubusercontent.com/ne
 ## 구현 예정
 
 SF 파일을 그냥 클릭해서 열어서 작동하는 기능이 구현 예정에 포함되어 있습니다.
+
+
+<span style="color:red">
+
+
