@@ -1,4 +1,5 @@
 # SF 스크립트 (Summon File Script) 사용 방법
+![sf script](https://github.com/newhajinyoon/sf-script/assets/61103309/dee7e8d5-16d8-49de-918c-e6d41ac6471a)
 
 SF 스크립트는 파일과 코드를 자동으로 생성하는 명령 스크립트입니다. 주어진 명령대로 파일과 코드를 생성하거나 덮어쓸 수 있습니다.
 GPT와 활용하면 효과가 2051배 됩니다. 
