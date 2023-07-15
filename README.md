@@ -10,8 +10,9 @@ _아직 같은 경로에 있는 `summon.sf` 밖에 인식하지 못합니다!<br
 
 **SF 스크립트**는 파일과 코드를 자동으로 생성하는 명령 스크립트입니다. 주어진 명령대로 파일과 코드를 생성하거나 덮어쓸 수 있습니다. GPT와 함께 활용하면 효과가 2051배 됩니다.
 
-1. 작성된 `summon.sf` 파일과 같은 경로에 `sf.exe` 파일을 둡니다. 
-2. `sf.exe`를 실행합니다.
+1. [다운로드](https://github.com/newhajinyoon/sf-script/releases)합니다.
+2. 작성된 `summon.sf` 파일과 같은 경로에 `sf.exe` 파일을 둡니다. 
+3. `sf.exe`를 실행합니다.
 
 ## 명령 스크립트 작성법
 
@@ -67,6 +68,7 @@ SF 스크립트를 활용하여 해줘.
 
 https://github.com/newhajinyoon/sf-script/assets/61103309/b53141fe-c410-499c-8f03-ed0b2e4eeb99
 
+여기서 만들어진 `summmon.sf`는 [여기서](https://github.com/newhajinyoon/sf-script/blob/main/example/chat/summon.sf) 다운할수 있습니다.
 
 
 ### SF 파일 작성법을 GPT에게 학습시키기
