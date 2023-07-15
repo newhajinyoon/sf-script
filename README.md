@@ -55,7 +55,10 @@ c[templates/hi.html] :
 적어도 파일 5개를 생성해줘
 SF 스크립트를 활용하여 해줘.
 ```
-https://github.com/newhajinyoon/sf-script/assets/61103309/0af01212-7af0-4c64-a0a2-1c680d47f91a
+
+https://github.com/newhajinyoon/sf-script/assets/61103309/b53141fe-c410-499c-8f03-ed0b2e4eeb99
+
+
 
 ### SF 파일 작성법을 GPT에게 학습시키기
 
