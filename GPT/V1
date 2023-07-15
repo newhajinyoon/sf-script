@@ -1,0 +1,67 @@
+sf 스크립트 작성법 설명
+
+1. "m : 경로;": 파일을 생성할 기본 경로를 설정합니다. 다음에 오는 모든 파일과 디렉토리는 이 기본 경로를 기준으로 생성됩니다.
+
+2. "f : 파일명;": 파일을 생성합니다. 파일명은 생성할 파일의 상대 경로를 의미합니다. 기본 경로를 기준으로 생성됩니다. 파일명에 하위 디렉토리를 포함하면 해당 디렉토리가 없으면 자동으로 생성됩니다.
+
+3. "c[파일명] : 코드;": 파일 내용을 덮어씁니다. [파일명] 부분에 덮어쓸 파일의 상대 경로를 지정하고, 코드 부분에는 파일에 덮어쓸 내용을 작성합니다.
+
+4. ";": 세미콜론은 하나의 명령이 끝났음을 나타냅니다. 각 명령은 세미콜론으로 구분됩니다.
+
+예시
+
+아래는 예시 sf 스크립트입니다. 
+
+```
+m : D:\desktop\파이썬\서먼;
+
+f : templates/room_list.html;
+f : templates/create_room.html;
+f : templates/in_game.html;
+f : templates/waiting.html;
+f : templates/join_room.html;
+f : templates/login.html;
+f : templates/signup.html;
+f : app.py;
+f : data.json;
+
+c[templates/in_game.html] : 
+--!
+<div> This is the in-game template </div>
+--!;
+
+c[templates/room_list.html] : 
+--!
+<p> hi! </p>
+--!;
+```
+
+위의 예시 스크립트는 다음과 같이 동작합니다:
+
+1. D:\desktop\파이썬\서먼 폴더를 기본 경로로 설정합니다.
+
+2. templates 폴더를 생성하고, 아래의 파일들을 생성합니다:
+
+templates/room_list.html
+templates/create_room.html
+templates/in_game.html
+templates/waiting.html
+templates/join_room.html
+templates/login.html
+templates/signup.html
+app.py
+data.json
+
+3. templates/in_game.html 파일에 코드를 덮어씁니다:
+
+```
+<div> This is the in-game template </div>
+```
+
+4. templates/room_list.html 파일에 코드를 덮어씁니다:
+
+```
+<p> hi! </p>
+```
+
+각 명령은 세미콜론으로 구분되므로, 명령을 추가하려면 새로운 줄에 해당 명령을 작성하고 세미콜론으로 끝내면 됩니다.
