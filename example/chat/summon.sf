@@ -1,0 +1,127 @@
+  m : D:\desktop\파이썬\sute
+
+f : templates/index.html;
+f : templates/chat.html;
+f : static/style.css;
+f : app.py;
+f : data.json;
+
+c[templates/index.html] :
+--!
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Chat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Online Chat</h1>
+    <div id="chat-link">
+        <a href="{{ url_for('chat') }}">Join the Chat</a>
+    </div>
+</body>
+</html>
+--!;
+
+c[templates/chat.html] :
+--!
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Room</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Chat Room</h2>
+    <div id="chat-box">
+        <!-- Chat messages will be displayed here -->
+    </div>
+    <div id="input-box">
+        <input type="text" id="message" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script>
+        // JavaScript for sending messages and displaying them in the chat-box
+        // (You need to implement this in your app.py)
+        function sendMessage() {
+            var message = document.getElementById('message').value;
+            // Code to send the message to the server and display it in the chat-box
+        }
+    </script>
+</body>
+</html>
+--!;
+
+c[static/style.css] :
+--!
+/* CSS styles for the chat app */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#chat-box {
+    width: 80%;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#input-box {
+    margin-top: 20px;
+}
+
+#input-box input {
+    padding: 5px;
+    width: 60%;
+}
+
+#input-box button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+--!;
+
+c[app.py] :
+--!
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/chat')
+def chat():
+    return render_template('chat.html')
+
+if __name__ == '__main__':
+    app.run()
+--!;
+
+c[data.json] :
+--!
+{
+    "messages": []
+}
+--!;
