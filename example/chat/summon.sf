@@ -1,4 +1,4 @@
-m : D:\desktop\파이썬\sute
+m : 경로를 입력해주세요;
 
 f : templates/index.html;
 f : templates/chat.html;
