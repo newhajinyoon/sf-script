@@ -1,0 +1,63 @@
+Description of how to write an sf script
+
+Sure! Here's the explanation of the "sf script" commands in English:
+
+1. `m: path;`: Sets the default path for file creation. All subsequent files and directories will be created relative to this default path.
+
+2. `f: filename;`: Creates a file. The filename represents the relative path of the file to be created, based on the default path. If the filename includes subdirectories, they will be automatically created if they do not exist.
+
+3. `c[filename]: code;`: Overwrites the content of a file. Replace `[filename]` with the relative path of the file to be overwritten, and `code` with the content to be written into the file.
+
+4. `;`: The semicolon indicates the end of a command. Each command is separated by a semicolon.
+
+Example:
+
+Below is an example of an "sf script":
+
+```
+m: D:\desktop\python\summary;
+
+f: templates/room_list.html;
+f: templates/create_room.html;
+f: templates/in_game.html;
+f: templates/waiting.html;
+f: templates/join_room.html;
+f: templates/login.html;
+f: templates/signup.html;
+f: app.py;
+f: data.json;
+
+c[templates/in_game.html]: 
+--!
+<div> This is the in-game template </div>
+--!;
+
+c[templates/room_list.html]: 
+--!
+<p> hi! </p>
+--!;
+```
+
+The above example script works as follows:
+
+1. Sets the default path to `D:\desktop\python\summary`.
+2. Creates the following files and directories relative to the default path:
+   - templates/room_list.html
+   - templates/create_room.html
+   - templates/in_game.html
+   - templates/waiting.html
+   - templates/join_room.html
+   - templates/login.html
+   - templates/signup.html
+   - app.py
+   - data.json
+3. Overwrites the content of `templates/in_game.html` with:
+   ```
+   <div> This is the in-game template </div>
+   ```
+4. Overwrites the content of `templates/room_list.html` with:
+   ```
+   <p> hi! </p>
+   ```
+
+Each command is terminated with a semicolon, and to add more commands, you simply write them on new lines and separate them with semicolons.
