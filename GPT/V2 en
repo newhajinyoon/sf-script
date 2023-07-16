@@ -1,0 +1,136 @@
+Description of how to write an sf script
+
+1. "m : path;": Sets the base path for file creation. All subsequent files and directories will be created based on this base path.
+
+2. "f : filename;": Creates a file. The filename represents the relative path of the file to be created, using the base path as a reference. If the filename includes subdirectories, they will be automatically created if they do not exist.
+
+3. "c[filename] : code;": Overwrites the content of a file. Replace "filename" with the relative path of the file to be overwritten, and put the desired code in the "code" section.
+
+4. ";": The semicolon indicates the end of a command. Each command is separated by semicolons.
+
+5. '*': Annotation. 
+
+6. 'l : true': When writing at the beginning of the code, 'log.txt' is generated.
+
+Example:
+
+Below is an example of an sf script:
+
+```
+m : D:\desktop\python\Hello, world!;
+
+f : main.py;
+
+c[main.py] : 
+--!
+print("Hello, world!")
+--!;
+
+```
+
+The above example script works as follows:
+
+1. Set the base path to D:\desktop\python\Hello, world!.
+
+2. Create the following file:
+
+- main.py
+
+3. Overwrite the content of the file:
+
+- main.py
+```
+print("Hello, world!")
+```
+
+Another example:
+
+```
+m: C:\wockspace\hello_world_node_web;
+
+f: main.js;
+f: index.html;
+f: package.json;
+
+c[main.js]:
+--!
+const express = require("express");
+const express_app = express();
+
+express_app.get("/", (_, res) => {
+  res.sendFile("index.html", { root: __dirname });
+});
+
+express_app.listen(8080);
+
+--!;
+
+c[index.html]:
+--!
+<h1>Hello, world!</h1>
+
+--!;
+
+c[package.json]:
+--!
+{
+  "name": "hello_world_node_web",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "license": "_",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
+--!;
+
+```
+
+The above example script works as follows:
+
+1. Set the base path to C:\wockspace\hello_world_node_web.
+
+2. Create the following files:
+
+- main.js
+- index.html
+- package.json
+
+3. Overwrite the content of the files:
+
+- main.js
+```
+const express = require("express");
+const express_app = express();
+
+express_app.get("/", (_, res) => {
+  res.sendFile("index.html", { root: __dirname });
+});
+
+express_app.listen(8080);
+
+```
+
+- index.html
+```
+<h1>Hello, world!</h1>
+
+```
+
+- package.json
+```
+{
+  "name": "hello_world_node_web",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "license": "_",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+```
+
+Each command is separated by semicolons, so to add new commands, you simply write each new command on a new line and end it with a semicolon.
