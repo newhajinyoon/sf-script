@@ -80,7 +80,5 @@ GPT에게 학습시키려면 [여기에서](https://raw.githubusercontent.com/ne
 
 SF 파일을 그냥 클릭해서 열어서 작동하는 기능이 구현 예정에 포함되어 있습니다.
 
-
-<span style="color:red">
-
-
+## 특별한 감사
+[kdh8219](https://github.com/kdh8219)https://github.com/kdh8219
