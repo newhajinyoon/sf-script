@@ -78,7 +78,7 @@ https://github.com/newhajinyoon/sf-script/assets/61103309/9f00c53c-fa4a-4612-852
 ### SF 파일 작성법을 GPT에게 학습시키기
 
 GPT에게 학습시키려면 [여기에서](https://raw.githubusercontent.com/newhajinyoon/sf-script/main/GPT/V2%20en) 글을 모두 복사해서 GPT에게 붙여넣으세요. GPT가 학습된 후, SF 스크립트를 활용해달라는 말을 뒤에 붙이기만 하면 작동합니다.<br>
-[한국어](https://raw.githubusercontent.com/newhajinyoon/sf-script/main/GPT/V2) [이전 버전](https://raw.githubusercontent.com/newhajinyoon/sf-script/main/GPT/)
+[한국어](https://raw.githubusercontent.com/newhajinyoon/sf-script/main/GPT/V2) / [이전 버전](https://raw.githubusercontent.com/newhajinyoon/sf-script/main/GPT/)
 
 ## 구현 예정
 
