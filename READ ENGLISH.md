@@ -29,6 +29,10 @@ To be patched.
 
 4. `;`: The semicolon denotes the end of a command. Each command is separated by semicolons.
 
+5. '*' : Annotation.
+
+6. 'l : true' : When writing at the beginning of the code, 'log.txt' is generated.
+
 ## Example
 
 Below is an example of an `.sf` script that can be copied into a "summon.sf" file for use:
