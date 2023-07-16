@@ -1,7 +1,5 @@
 Description of how to write an sf script
 
-Sure! Here's the explanation of the "sf script" commands in English:
-
 1. `m: path;`: Sets the default path for file creation. All subsequent files and directories will be created relative to this default path.
 
 2. `f: filename;`: Creates a file. The filename represents the relative path of the file to be created, based on the default path. If the filename includes subdirectories, they will be automatically created if they do not exist.
