@@ -2,7 +2,7 @@
 _아직 같은 경로에 있는 `summon.sf` 밖에 인식하지 못합니다!<br>이름이 달라도 인식하지 못합니다!_<br>
 패치예정
 
-
+[English README](https://github.com/newhajinyoon/sf-script/blob/main/READ%20ENGLISH.md)
 
 # SF 스크립트 (Summon File Script) 사용 방법
 
@@ -66,14 +66,15 @@ c[templates/hi.html] :
 SF 스크립트를 활용하여 해줘.
 ```
 
-https://github.com/newhajinyoon/sf-script/assets/61103309/b53141fe-c410-499c-8f03-ed0b2e4eeb99
+https://github.com/newhajinyoon/sf-script/assets/61103309/9f00c53c-fa4a-4612-852c-0d9e284357ee
 
 여기서 만들어진 `summmon.sf`는 [여기서](https://github.com/newhajinyoon/sf-script/blob/main/example/chat/summon.sf) 다운할수 있습니다.
 
 
 ### SF 파일 작성법을 GPT에게 학습시키기
 
-GPT에게 학습시키려면 [여기에서](https://raw.githubusercontent.com/newhajinyoon/sf-script/main/GPT/V1) 글을 모두 복사해서 GPT에게 붙여넣으세요. GPT가 학습된 후, SF 스크립트를 활용해달라는 말을 뒤에 붙이기만 하면 작동합니다.
+GPT에게 학습시키려면 [여기에서](https://raw.githubusercontent.com/newhajinyoon/sf-script/main/GPT/V1%20en) 글을 모두 복사해서 GPT에게 붙여넣으세요. GPT가 학습된 후, SF 스크립트를 활용해달라는 말을 뒤에 붙이기만 하면 작동합니다.<br>
+[한국어](https://raw.githubusercontent.com/newhajinyoon/sf-script/main/GPT/V1)
 
 ## 구현 예정
 
