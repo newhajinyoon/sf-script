@@ -134,3 +134,6 @@ express_app.listen(8080);
 ```
 
 Each command is separated by semicolons, so to add new commands, you simply write each new command on a new line and end it with a semicolon.
+
+But remember, writing with "m:" or "f:" will cause an error. 
+Make sure you write "m : " and "f : " with the correct spacing.
